@@ -1142,3 +1142,236 @@ footer span {
     animation: none !important;
   }
 }
+
+/* =====================================
+   WHITE + CHERRY RED THEME
+   Decorative bees and cherries
+===================================== */
+
+:root {
+  --bg: #fffafa;
+  --panel: #fff5f6;
+  --text: #3b2028;
+  --muted: #92747c;
+  --rose: #c62845;
+  --lav: #f2b8c3;
+}
+
+html,
+body {
+  background-color: #fffafa;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 8% 8%, #ffe5e9 0%, transparent 34%),
+    radial-gradient(ellipse at 92% 58%, #fff0f2 0%, transparent 38%), #fffafa;
+  color: #3b2028;
+}
+
+.ambient-one {
+  background: #f6a9b8;
+  opacity: 0.17;
+}
+.ambient-two {
+  background: #ffd6dc;
+  opacity: 0.2;
+}
+
+.intro {
+  background:
+    radial-gradient(ellipse at 50% 45%, #fff0f2, transparent 58%), #fffafa;
+}
+
+.intro:after {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 30%,
+    #fffafa66 100%
+  );
+}
+
+.eyebrow,
+.intro h1 em,
+.hero-title em,
+.section-heading h2 em,
+.letter h2 em,
+.closing h2 em,
+.signature strong,
+footer span {
+  color: #c62845;
+}
+
+.start-button {
+  border-color: #efb8c2;
+  background: linear-gradient(120deg, #fff0f2, #f8cbd3);
+  color: #672838;
+  box-shadow: 0 15px 45px #c6284520;
+}
+
+.start-button:hover {
+  box-shadow: 0 20px 55px #c6284530;
+}
+.button-heart {
+  color: #c62845;
+}
+
+.music-button {
+  border-color: #f0d5da;
+  color: #70434d;
+}
+
+.music-bars i {
+  background: #c62845;
+}
+
+.hero-divider,
+.scroll-note span,
+.closing-heart,
+.letter-top span:last-child {
+  color: #c62845;
+}
+
+.hero-divider span {
+  background: linear-gradient(90deg, transparent, #c6284566);
+}
+
+.photo-card {
+  border-color: #fff;
+  background: #fff0f2;
+  box-shadow: 0 12px 38px #8f34451b;
+}
+
+.photo-card:hover {
+  box-shadow: 0 22px 50px #8f34452b;
+}
+
+.letter {
+  border-color: #f2dce0;
+  background: linear-gradient(145deg, #fff, #fff7f8);
+  box-shadow: 0 25px 80px #8f344510;
+}
+
+.letter:before {
+  background: #f4b8c51c;
+}
+
+.letter-emphasis {
+  border-left-color: #c62845;
+  background: #c628450d;
+  color: #60313d;
+}
+
+.closing-glow {
+  background: #f8dce2a8;
+}
+.lightbox {
+  background: #fffafaed;
+}
+
+.lightbox-close,
+.lightbox-arrow {
+  border-color: #f0d5da;
+  color: #7c3445;
+}
+
+/* Floating bee and cherry decorations */
+.floating-decorations {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.decor {
+  position: absolute;
+  display: block;
+  opacity: 0.78;
+  filter: drop-shadow(0 5px 8px #8f34451a);
+  user-select: none;
+}
+
+.decor-bee {
+  font-size: clamp(20px, 2.5vw, 31px);
+  animation: beeDrift 8s ease-in-out infinite;
+}
+
+.decor-cherry {
+  font-size: clamp(22px, 2.7vw, 34px);
+  animation: cherryBob 6.5s ease-in-out infinite;
+}
+
+.bee-one {
+  top: 25%;
+  left: 3.5%;
+}
+.bee-two {
+  right: 5%;
+  bottom: 23%;
+  animation-delay: -3.5s;
+}
+.cherry-one {
+  top: 62%;
+  left: 5%;
+  animation-delay: -2s;
+}
+.cherry-two {
+  top: 16%;
+  right: 4%;
+  animation-delay: -4s;
+}
+
+@keyframes beeDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-8deg);
+  }
+  25% {
+    transform: translate3d(12px, -13px, 0) rotate(7deg);
+  }
+  55% {
+    transform: translate3d(25px, 2px, 0) rotate(-4deg);
+  }
+  80% {
+    transform: translate3d(8px, 12px, 0) rotate(8deg);
+  }
+}
+
+@keyframes cherryBob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(8deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .floating-decorations {
+    opacity: 0.58;
+  }
+  .bee-one {
+    top: 19%;
+    left: 2%;
+  }
+  .bee-two {
+    right: 2%;
+    bottom: 16%;
+  }
+  .cherry-one {
+    top: 68%;
+    left: 2%;
+  }
+  .cherry-two {
+    top: 13%;
+    right: 2%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decor {
+    animation: none !important;
+  }
+}
