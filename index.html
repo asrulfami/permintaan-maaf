@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#090a12" />
+    <meta
+      name="description"
+      content="Sebuah halaman kecil berisi kenangan dan permintaan maaf yang tulus."
+    />
+    <title>I'm Sorry — A Little Place for You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="locked">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <section class="intro" id="intro">
+      <div class="intro-collage" aria-hidden="true">
+        <img class="intro-photo p-one" src="assets/images/2.jpeg" alt="" />
+        <img class="intro-photo p-two" src="assets/images/5.jpeg" alt="" />
+        <img class="intro-photo p-three" src="assets/images/8.jpeg" alt="" />
+        <img class="intro-photo p-four" src="assets/images/10.jpeg" alt="" />
+      </div>
+      <div class="intro-content">
+        <p class="eyebrow">A LITTLE NOTE FROM ME TO YOU</p>
+        <h1>There are things<br /><em>I should have said.</em></h1>
+        <p class="intro-copy">
+          Bukan untuk mengulang semuanya, hanya ingin menyampaikan sesuatu yang
+          seharusnya dari dulu aku katakan.
+        </p>
+        <button class="start-button" id="startButton" type="button">
+          <span>Buka surat kecil ini</span><span class="button-heart">♡</span>
+        </button>
+        <p class="hint" id="startHint">
+          Putar pelan-pelan, kalau kamu berkenan.
+        </p>
+      </div>
+      <span class="intro-foot">A QUIET CORNER · JUST FOR YOU</span>
+    </section>
+
+    <main id="content" class="content hidden">
+      <header class="topbar">
+        <a class="wordmark" href="#top">a little note <span>♡</span></a>
+        <button
+          id="musicButton"
+          class="music-button"
+          type="button"
+          aria-label="Putar atau jeda musik"
+        >
+          <span class="music-bars" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i
+          ></span>
+          <span id="musicLabel">Play music</span>
+        </button>
+      </header>
+
+      <section class="hero section-wrap" id="top">
+        <p class="eyebrow reveal">BEFORE YOU SCROLL</p>
+        <h2 class="hero-title reveal">
+          Aku mau minta maaf,<br /><em>dengan sungguh-sungguh.</em>
+        </h2>
+        <p class="hero-text reveal">
+          Ada beberapa hal yang mungkin selama ini terasa berat buat kamu. Aku
+          sadar, dan aku nggak mau pura-pura semuanya baik-baik saja.
+        </p>
+        <div class="hero-divider reveal">
+          <span></span><b>♡</b><span></span>
+        </div>
+        <p class="scroll-note reveal">SCROLL SLOWLY <span>↓</span></p>
+      </section>
+
+      <section class="gallery-section section-wrap" id="memories">
+        <div class="section-heading reveal">
+          <p class="eyebrow">LITTLE FRAGMENTS</p>
+          <h2>Sepuluh potongan<br /><em>yang ingin kusimpan.</em></h2>
+          <p>
+            Foto-foto ini bukan untuk membuatmu merasa harus kembali. Hanya
+            pengingat bahwa ada momen baik yang pernah hadir, dan tetap layak
+            dikenang dengan baik.
+          </p>
+        </div>
+        <div class="masonry" id="masonry">
+          <button
+            class="photo-card card-1 reveal"
+            data-photo="0"
+            aria-label="Lihat foto 1"
+          >
+            <img
+              src="assets/images/1.jpeg"
+              alt="Kenangan 1"
+              loading="lazy"
+            /><span class="photo-index">01</span>
+          </button>
+          <button
+            class="photo-card card-2 reveal"
+            data-photo="1"
+            aria-label="Lihat foto 2"
+          >
+            <img
+              src="assets/images/2.jpeg"
+              alt="Kenangan 2"
+              loading="lazy"
+            /><span class="photo-index">02</span>
+          </button>
+          <button
+            class="photo-card card-3 reveal"
+            data-photo="2"
+            aria-label="Lihat foto 3"
+          >
+            <img
+              src="assets/images/3.jpeg"
+              alt="Kenangan 3"
+              loading="lazy"
+            /><span class="photo-index">03</span>
+          </button>
+          <button
+            class="photo-card card-4 reveal"
+            data-photo="3"
+            aria-label="Lihat foto 4"
+          >
+            <img
+              src="assets/images/4.jpeg"
+              alt="Kenangan 4"
+              loading="lazy"
+            /><span class="photo-index">04</span>
+          </button>
+          <button
+            class="photo-card card-5 reveal"
+            data-photo="4"
+            aria-label="Lihat foto 5"
+          >
+            <img
+              src="assets/images/5.jpeg"
+              alt="Kenangan 5"
+              loading="lazy"
+            /><span class="photo-index">05</span>
+          </button>
+          <button
+            class="photo-card card-6 reveal"
+            data-photo="5"
+            aria-label="Lihat foto 6"
+          >
+            <img
+              src="assets/images/6.jpeg"
+              alt="Kenangan 6"
+              loading="lazy"
+            /><span class="photo-index">06</span>
+          </button>
+          <button
+            class="photo-card card-7 reveal"
+            data-photo="6"
+            aria-label="Lihat foto 7"
+          >
+            <img
+              src="assets/images/7.jpeg"
+              alt="Kenangan 7"
+              loading="lazy"
+            /><span class="photo-index">07</span>
+          </button>
+          <button
+            class="photo-card card-8 reveal"
+            data-photo="7"
+            aria-label="Lihat foto 8"
+          >
+            <img
+              src="assets/images/8.jpeg"
+              alt="Kenangan 8"
+              loading="lazy"
+            /><span class="photo-index">08</span>
+          </button>
+          <button
+            class="photo-card card-9 reveal"
+            data-photo="8"
+            aria-label="Lihat foto 9"
+          >
+            <img
+              src="assets/images/9.jpeg"
+              alt="Kenangan 9"
+              loading="lazy"
+            /><span class="photo-index">09</span>
+          </button>
+          <button
+            class="photo-card card-10 reveal"
+            data-photo="9"
+            aria-label="Lihat foto 10"
+          >
+            <img
+              src="assets/images/10.jpeg"
+              alt="Kenangan 10"
+              loading="lazy"
+            /><span class="photo-index">10</span>
+          </button>
+        </div>
+        <p class="gallery-foot reveal">
+          Some moments don't need to be perfect to mean something.
+        </p>
+      </section>
+
+      <section class="apology-section section-wrap">
+        <article class="letter reveal">
+          <div class="letter-top"><span>01 — A LETTER</span><span>♡</span></div>
+          <p class="eyebrow">WHAT I OWE YOU</p>
+          <h2>Maafin aku,<br /><em>ya?</em></h2>
+          <div class="letter-body">
+            <p>
+              Aku mau minta maaf untuk sikapku selama ini. Maaf karena aku
+              sering menuduh tanpa benar-benar memahami keadaan. Maaf karena
+              pikiranku sendiri kadang membuat hal-hal sederhana jadi rumit.
+            </p>
+            <p>
+              Maaf juga karena aku terlalu sering overthinking, membiarkan rasa
+              takut dan prasangkaku berbicara lebih dulu daripada kepercayaan.
+              Aku sadar itu bisa melelahkan, dan mungkin membuat kamu merasa
+              harus terus menjelaskan sesuatu yang seharusnya tidak perlu kamu
+              buktikan.
+            </p>
+            <p>
+              Dan maaf kalau sikapku pernah membuat kamu risih, tidak nyaman,
+              atau merasa ruangmu tidak dihargai. Aku seharusnya lebih peka,
+              lebih tenang, dan lebih bisa menghormati batasanmu.
+            </p>
+            <p>
+              Aku nggak menulis ini untuk mencari pembenaran. Apa pun alasannya,
+              sikapku tetap bisa menyakiti. Aku bertanggung jawab atas itu, dan
+              aku ingin belajar memperbaikinya lewat tindakan, bukan cuma
+              kata-kata.
+            </p>
+            <p class="letter-emphasis">
+              Kamu nggak harus langsung memaafkan aku. Aku juga nggak ingin
+              membuat kamu merasa punya kewajiban untuk membalas pesan ini. Aku
+              cuma ingin kamu tahu kalau aku sadar, aku menyesal, dan aku
+              benar-benar minta maaf.
+            </p>
+          </div>
+          <div class="signature">
+            <span>with honesty,</span><strong>— Nellzzz.</strong>
+          </div>
+        </article>
+      </section>
+
+      <section class="closing section-wrap">
+        <div class="closing-glow"></div>
+        <p class="eyebrow reveal">ONE LAST THING</p>
+        <h2 class="reveal">
+          Terima kasih sudah<br /><em>pernah menjadi bagian</em><br />dari
+          ceritaku.
+        </h2>
+        <p class="closing-copy reveal">
+          Semoga ke depannya ada lebih banyak tenang, lebih banyak bahagia, dan
+          lebih sedikit hal yang membuatmu merasa tidak nyaman. Jaga dirimu
+          baik-baik, ya.
+        </p>
+        <div class="closing-heart reveal">♡</div>
+        <p class="closing-foot reveal">
+          THIS LITTLE PAGE WAS MADE WITH SINCERITY
+        </p>
+      </section>
+      <footer>made with care <span>♡</span></footer>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">
+        ×
+      </button>
+      <button
+        class="lightbox-arrow prev"
+        id="lightboxPrev"
+        aria-label="Foto sebelumnya"
+      >
+        ‹
+      </button>
+      <img id="lightboxImage" src="" alt="Foto kenangan diperbesar" />
+      <button
+        class="lightbox-arrow next"
+        id="lightboxNext"
+        aria-label="Foto selanjutnya"
+      >
+        ›
+      </button>
+      <p id="lightboxCount">01 / 10</p>
+    </div>
+
+    <audio id="song" preload="metadata" loop>
+      <source src="assets/audio/keepme.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
